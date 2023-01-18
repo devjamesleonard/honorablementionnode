@@ -6,15 +6,28 @@ const mysql = require('mysql');
 const cors = require('cors');
 app.use(cors());
 app.use(express.json());
+/*
+require('dotenv').config();
+const user = process.env.USER;
+const host = process.env.HOST;
+const password = process.env.PASSWORD;
+const database = process.env.DATABASE;
 const db = mysql.createConnection({
-
-user: 'u638015740_Username123',
-host: '195.179.239.0',
-password: 'Password123',
-database: 'u638015740_mentions'
+user: user,
+host: host,
+password: password,
+database: database
 
 });
+*/
+const db = mysql.createConnection({
 
+    user: 'u638015740_Username123',
+    host: '195.179.239.0',
+    password: 'Password123',
+    database: 'u638015740_mentions'
+    
+    });
 app.post('/create',(req,res)=>{
 //we are passing variables through on our request
 const title = req.body.title;
