@@ -24,7 +24,7 @@ const db = mysql.createConnection({
 
     user: 'u638015740_Username123',
     host: '195.179.239.0',
-    password: 'Password123',
+    password: 'bL3>b@wz7^IF',
     database: 'u638015740_mentions'
     
     });
